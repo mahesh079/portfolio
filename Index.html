@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Journey</title>
     <link rel="stylesheet" href="./about.css" />
+
+    <!-- Font Awesome cdn link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
     <header id="background">
       <nav id="navbar">
@@ -24,7 +34,7 @@
       </div>
     </header>
 
-    <main id="about">
+    <section id="about">
       <div id="qualifications" class="aboutme">
         <h1>Qualifications</h1>
         <ul>
@@ -34,6 +44,16 @@
           </li>
           <li>Bsc computer science (2022) 9.1 CGPA</li>
         </ul>
+        <h1>Skills</h1>
+        <ul>
+          <li>Html,css, javscript</li>
+          <li>React js</li>
+          <li>Express js</li>
+          <li>MYSQL</li>
+          <li>Mongo DB</li>
+          <li>Python</li>
+          <li>Salesforce admin</li>
+        </ul>
       </div>
       <div class="imgslider"></div>
       <div id="hobbies" class="aboutme">
@@ -41,18 +61,20 @@
         <ul>
           <li>1)Playing Badminton</li>
           <li>2)Staying fit</li>
-          <li>
-            <video
-              controls
-              src="./badminton_video.mp4"
-              id="badminton_video"
-            ></video>
-          </li>
         </ul>
+        <div id="hobby-videos">
+          <div><i class="fa-solid fa-arrow-left"></i></div>
+          <video
+            controls
+            src="./badminton_video.mp4"
+            id="badminton_video"
+          ></video>
+          <div><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <main class="exp-main">
+    <section class="exp-main">
       <h1>Experience</h1>
       <div class="experience">
         <div class="experiences exp-1">
@@ -76,18 +98,53 @@
             with out any defects. Collaborated with business analyst and helped
             them to understand business requirement better.Worked with team to
             develop, enhance and deliver a MERN stack application based on
-            health cloud
+            health cloud.
           </p>
         </div>
       </div>
       <div class="exp-image">
         <h1>Images</h1>
         <div id="btn-image">
-          <button>Previous</button>
+          <button><i class="fa-solid fa-arrow-left"></i></button>
           <img src="office1.jpg" alt="" />
-          <button>Next</button>
+          <button><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
-    </main>
+    </section>
+
+    <section class="projects">
+      <h1>Projects</h1>
+      <div class="projects description">
+        <div>
+          <button><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="bg-purple">
+          <h1>Pfizer</h1>
+          <p>
+            A customer relationship management application. Built on salesforce
+            using Apex, lwc ,html,css and Amazon web services. Improved the
+            customer experience. Reduced the customer query response time
+          </p>
+        </div>
+        <div class="bg-purple">
+          <h1>Tufts 2.0</h1>
+          <p>
+            An e-commerce health insurance project which enabled the users to
+            purchase a suitable health insurance based on their reuqirements.
+            Consisted of email verification. It was made on MERN stack and
+            salesforce platform using apex,lwc ,html ,css,js.
+          </p>
+        </div>
+        <div>
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="projects photos">
+        <div><button><i class="fa-solid fa-arrow-left"></i></button></div>
+        <div><img src="" alt="No Image Found"></div>
+        <div><button><i class="fa-solid fa-arrow-right"></i></button></div>
+      </div>
+    </section>
   </body>
 </html>
