@@ -1,0 +1,162 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{background-color: rgb(62, 62, 92);}
+
+/* header css */
+#background {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.527),
+      rgba(189, 54, 54, 0.5)
+    ),
+    url("snow2.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 60vh;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  padding: 1em;
+  margin: 0%;
+  justify-content: center;
+}
+
+#nav-list li {
+  min-width: 7em;
+  font-size: 1.8em;
+  color: rgb(255, 255, 255);
+}
+
+#welcome {
+  width: 50vw;
+  height: fit-content;
+  margin: 5em auto;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+
+/* main section css */
+#about{
+    display: flex;
+    margin: 1em;
+}
+.aboutme{
+    width: 34em;
+    margin: 2em auto;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 5px 5px 5px 5px black;
+    background-color: rgb(62, 46, 77);
+}
+.aboutme h1{
+    color: black;
+}
+
+.aboutme ul{
+    list-style: none;
+    margin: 0%;
+    margin-top: 2em;
+}
+#badminton_video{
+    width: 25em;
+    margin: 1.5em;
+    box-sizing: border-box;
+}
+
+/* Image slider css */
+.imgslider {
+    border-radius: 10px;
+  width: 20em;
+  height: 30em;
+  background-color: blanchedalmond;
+  margin: auto;
+  background-image: url("my.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    animation: changeimg 10s linear infinite ;
+}
+
+@keyframes changeimg{
+    0%{
+        background-image: url("my.jpg");
+    }
+    50%{
+        background-image: url("my2.jpg");
+    }
+}
+
+
+/* Experience section css */
+.exp-main{
+    background-color: rgb(176, 177, 248);
+    margin: 2em 2em 2em 2em;
+    padding: 1em;
+    height: fit-content;
+}
+.exp-main h1{
+    text-align: center;
+}
+.experience{
+    min-height: 25em;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    margin: 1em;
+    
+}
+.experience div{
+    min-height: 20em;
+    width: 35em;
+    background-color: rgb(142, 118, 173);
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 10px;
+    max-height: fit-content;
+    margin-bottom: 2em;
+}
+
+.experiences{
+    text-align: center;
+}
+.experiences h2{
+    padding: 5px;
+    margin-top: 1em;
+}
+.experiences p{
+    padding: 10px;
+    color: azure;
+}
+
+/*Experience Images section*/
+
+.exp-image img{
+    width: 30em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px 2px;
+}
+
+#btn-image{
+    text-align: center;
+    margin: 2em;
+    box-sizing: border-box;
+}
+
+#btn-image button{
+   background-color: rgb(228, 211, 255);
+   width:5em;
+}
