@@ -17,7 +17,7 @@ body{background-color: rgb(62, 62, 92);}
       rgba(0, 0, 0, 0.527),
       rgba(189, 54, 54, 0.5)
     ),
-    url("snow2.jpg");
+    url("./media/snow2.jpg");
   background-size: cover;
   background-position: top;
   height: 60vh;
@@ -88,7 +88,7 @@ body{background-color: rgb(62, 62, 92);}
   height: 30em;
   background-color: blanchedalmond;
   margin: auto;
-  background-image: url("my.jpg");
+  background-image: url("./media/my.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -100,10 +100,10 @@ body{background-color: rgb(62, 62, 92);}
 
 @keyframes changeimg{
     0%{
-        background-image: url("my.jpg");
+        background-image: url("./media/my.jpg");
     }
     50%{
-        background-image: url("my2.jpg");
+        background-image: url("./media/my2.jpg");
     }
 }
 
@@ -193,4 +193,15 @@ body{background-color: rgb(62, 62, 92);}
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 5px 2px 5px 2px;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photos div{
+    width: 25em;
+}
+#office-images{
+    width: 25em;
 }
